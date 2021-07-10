@@ -1,0 +1,41 @@
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+.gallery {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  margin-left: -20px;
+  margin-top: -20px;
+}
+
+.box {
+  margin-top: 20px;
+  margin-left: 20px;
+  flex-basis: calc(100% / 3 - 20px);
+}
+
+.box__image {
+  display: block;
+  border-radius: 5px;
+  object-fit: cover;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.20), 0px 4px 4px rgba(0, 0, 0, 0.10),
+    1px 4px 6px rgba(0, 0, 0, 0.30);
+}
+
+/*-------------- 6-----------*/
+
+#validation-input {
+  border: 3px solid #bdbdbd;
+}
+
+#validation-input.valid {
+  border-color: #4caf50;
+}
+
+#validation-input.invalid {
+  border-color: #f44336;
+}
