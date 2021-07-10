@@ -12,7 +12,7 @@ const navRef = document.getElementById('ingredients');
 const array = [];
 ingredients.forEach((value) => {
 const listLi = document.createElement("li");
-value = listLi.textContent;
+listLi.textContent = value;
 array.push(listLi.outerHTML);
 });
 
